@@ -15,7 +15,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
 
-<link rel="stylesheet" href="styles.css?v=20260827">
+<link rel="preload" as="image" href="assets/img/hero.jpg" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20260827b">
 </head>
 <body>
 <a href="#main" class="skip-link">Saltar al contenido</a>
@@ -95,12 +96,8 @@
       </div>
 
       <div class="hero-visual" data-reveal>
-        <div class="img-placeholder">
-          <div class="img-placeholder-inner">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-4.5-4.5a2 2 0 0 0-2.8 0L7 18"/></svg>
-            <strong>Placeholder — proporción 4:5</strong>
-            <span>Foto: tatami real de un dojo, con buena luz, antes de la sanitización. Idealmente con el logo del dojo visible (con autorización).</span>
-          </div>
+        <div class="photo-frame">
+          <img src="assets/img/hero.jpg" alt="Superficie de tatami sanitizada, textura de puzzle EVA verde con acento técnico turquesa" fetchpriority="high" loading="eager" decoding="sync">
         </div>
         <div class="hero-visual-tag"><span class="dot"></span><span>FM7K2R9X · en proceso</span></div>
       </div>
@@ -160,12 +157,8 @@
               <div class="proceso-sees"><strong>Ves</strong><span>Un informe con m² y tipo de material, no una cotización a ciegas por teléfono.</span></div>
             </div>
             <div class="proceso-media">
-              <div class="img-placeholder" style="aspect-ratio:4/3">
-                <div class="img-placeholder-inner">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-4.5-4.5a2 2 0 0 0-2.8 0L7 18"/></svg>
-                  <strong>Placeholder — 4:3</strong>
-                  <span>Foto: técnico midiendo el tatami o revisando equipo en la visita técnica.</span>
-                </div>
+              <div class="photo-frame photo-frame-4-3">
+                <img src="assets/img/paso1-diagnostico.jpg" alt="Manos con guantes midiendo un tatami con cinta métrica y tablet durante la visita técnica" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -181,12 +174,8 @@
               <div class="proceso-sees"><strong>Ves</strong><span>El equipo trabajando con el protocolo específico para tu tipo de piso o de guante.</span></div>
             </div>
             <div class="proceso-media">
-              <div class="img-placeholder" style="aspect-ratio:4/3">
-                <div class="img-placeholder-inner">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-4.5-4.5a2 2 0 0 0-2.8 0L7 18"/></svg>
-                  <strong>Placeholder — 4:3</strong>
-                  <span>Foto: aplicación del protocolo sobre tatami/EVA, o proceso de lavado de guantes.</span>
-                </div>
+              <div class="photo-frame photo-frame-4-3">
+                <img src="assets/img/paso2-protocolo.jpg" alt="Mano con guante aplicando spray sanitizante y paño sobre un tatami de EVA" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -202,12 +191,8 @@
               <div class="proceso-sees"><strong>Ves</strong><span>Las fotos disponibles en tu portal. No una promesa verbal de que "quedó listo".</span></div>
             </div>
             <div class="proceso-media">
-              <div class="img-placeholder" style="aspect-ratio:4/3">
-                <div class="img-placeholder-inner">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-4.5-4.5a2 2 0 0 0-2.8 0L7 18"/></svg>
-                  <strong>Placeholder — 4:3</strong>
-                  <span>Foto: comparación antes/después de un servicio real (con autorización del dojo o cliente).</span>
-                </div>
+              <div class="photo-frame photo-frame-4-3">
+                <img src="assets/img/paso3-evidencia.jpg" alt="Manos con guantes fotografiando el tatami con un celular para dejar registro del servicio" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -223,12 +208,8 @@
               <div class="proceso-sees"><strong>Ves</strong><span>Un PDF que puedes mostrar a apoderados o en una fiscalización, no solo un "listo, gracias".</span></div>
             </div>
             <div class="proceso-media">
-              <div class="img-placeholder" style="aspect-ratio:4/3">
-                <div class="img-placeholder-inner">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-4.5-4.5a2 2 0 0 0-2.8 0L7 18"/></svg>
-                  <strong>Placeholder — 4:3</strong>
-                  <span>Foto/mockup: certificado o informe PDF de una visita, sobre una tablet o celular.</span>
-                </div>
+              <div class="photo-frame photo-frame-4-3">
+                <img src="assets/img/paso4-certificado.jpg" alt="Mano sosteniendo una tablet con un informe digital de conformidad y un ícono de check" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -627,6 +608,6 @@
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
 <script defer src="lib/manifest.js"></script>
-<script defer src="main.js?v=20260827"></script>
+<script defer src="main.js?v=20260827b"></script>
 </body>
 </html>

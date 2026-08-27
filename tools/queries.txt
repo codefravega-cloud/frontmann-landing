@@ -1,0 +1,5 @@
+hero|judo tatami mat|tall|
+paso1-diagnostico|rubber gloves inspection|wide|
+paso2-protocolo|spray bottle cleaning floor|wide|
+paso3-evidencia|hands smartphone photo|wide|
+paso4-certificado|tablet digital report|wide|
