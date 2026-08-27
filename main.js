@@ -103,6 +103,20 @@
     }, 6000);
   }
 
+  /* ---------- Photo loop: crossfading sequence standing in for video ---------- */
+  function initPhotoLoop() {
+    var loop = $("[data-photo-loop]");
+    if (!loop) return;
+    var frames = $$("img", loop);
+    if (frames.length < 2) return;
+    var i = 0;
+    setInterval(function () {
+      frames[i].classList.remove("is-active");
+      i = (i + 1) % frames.length;
+      frames[i].classList.add("is-active");
+    }, 2800);
+  }
+
   /* ---------- Tilt + cursor halo on cards ---------- */
   function initTilt() {
     if (!fineHover) return;
@@ -260,6 +274,7 @@
     safe(initSmoothAnchors, "initSmoothAnchors");
     safe(initScrollProgress, "initScrollProgress");
     safe(initReveals, "initReveals");
+    safe(initPhotoLoop, "initPhotoLoop");
     safe(initTilt, "initTilt");
     safe(initCountUp, "initCountUp");
     safe(initTimeline, "initTimeline");

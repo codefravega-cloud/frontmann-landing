@@ -176,6 +176,26 @@ h2.section-title em { color: var(--accent); font-style: normal; }
 .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
 .photo-frame-4-3 { aspect-ratio: 4 / 3; }
 
+/* --- photo loop: crossfading sequence standing in for video --- */
+.photo-loop img {
+  position: absolute; inset: 0;
+  opacity: 0;
+  transition: opacity 1.8s var(--ease-soft);
+}
+.photo-loop img.is-active { opacity: 1; z-index: 1; }
+.photo-loop-badge {
+  position: absolute; top: .8rem; right: .8rem; z-index: 2;
+  display: inline-flex; align-items: center; gap: .4em;
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .04em; color: var(--paper);
+  background: rgba(6,17,13,.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  padding: .35em .7em; border-radius: 100px; border: 1px solid rgba(242,245,241,.18);
+}
+.photo-loop-badge::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+@keyframes pulseDot { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
+
 /* --- cards --- */
 .card {
   --rx: 0deg; --ry: 0deg;
